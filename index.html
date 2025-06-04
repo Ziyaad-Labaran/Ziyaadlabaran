@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +20,10 @@
             <span></span>
         </div>
         <nav id="nav">
+            <i class="fa-solid fa-xmark fa-2xl" id="close" style="color: #ffffff;"></i>
             <a href="index.html" class="abc"> <span style="border-bottom: 2px solid;">Home</span></a>
             <a href="#about" class="abc">About me</a>
             <a href="#service" class="abc">Services</a>
-            <a href="" class="abc">Resume</a>
             <a href="#works" class="abc">Portfolio</a>
             <a href="#contact" class="abc">Contact</a>
             <button class="Hire-me"><a href="#skills">Hire me</a></button>
@@ -34,10 +35,13 @@
                 <div>
                     <h3>Hello, its me </h3>
                     <h1>ZIYAAD LABARAN</h1>
-                    <h3>And am a <span>Frontend Developer</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, modi! Omnis blanditiis facilis
-                        veniam
-                        molestiae dolor deserunt, illum sunt delectus dicta</p>
+                    <h3>And am a <div class="typing-container">
+                            <span id="typed-text"></span><span class="cursor">|</span>
+                        </div>
+                    </h3>
+                    <p> A dedicated Junior Web Developer actively building a strong foundation in HTML, CSS, and
+                        JavaScript; passionate about crafting engaging web experiences and committed to continuous
+                        learning</p>
                     <br>
                     <button class="hero-button">Download CV</button>
                     <br>
@@ -86,14 +90,12 @@
             <div>
                 <h1>ABOUT <span>ME</span></h1>
                 <br>
-                <P>Lorem ipsum adipisicing elit. Eveniet, eligendi omnis vero, obcaecati accusamus iusto ad Sequi
-                    ducimus corrupti non rerum imus corrupti non rerum Lorem ipsum adipisicing elit. Eveniet, eligendi
-                    omnis vero, obcaecati accusamus iusto ad Sequi
-                    ducimus corrupti non rerum imus corrupti non rerum Lorem ipsum adipisicing elit. Eveniet, eligendi
-                    omnis vero, obcaecati accusamus iusto ad Sequi
-                    ducimus corrupti non rerum imus corrupti non rerum Lorem ipsum adipisicing elit. Eveniet, eligendi
-                    omnis vero, obcaecati accusamus iusto ad Sequi
-                    ducimus corrupti non rerum imus corrupti non rerum.</P>
+                <P>I am Ziyaad Wunintira Z.A Labaran, and my excitement for being a Front-End Web Developer is really
+                    about crafting experiences that feel just right. My passion extends beyond just code, embracing
+                    graphic design and UI/UX too. This helps me look at projects from all angles the visuals, the user
+                    journey, and the tech behind it. I'm a keen problem-solver and you'll find me to be a highly
+                    collaborative team member, always aiming to learn and elevate everything I touch in modern web
+                    development.</P>
                 <br>
                 <button class="hero-button"> <a href="#skills" style="color: rgb(255, 255, 255);">Read more</a></button>
             </div>
@@ -106,71 +108,64 @@
                     <div>
                         <img src="code-128.png" alt="">
                         <h2>WEB DEVELOPMENT</h2>
-                        <P>Lorem ipsum adipisicing elit. Eveniet, eligendi omnis vero, obcaecati accusamus iusto ad
-                            Sequi
-                            ducimus corrupti non rerum imus corrupti non rerum Lorem ipsum adipisicing elit. Eveniet,
-                            eligendi
-                            omnis vero, obcaecati accusamus iusto ad Sequi</P>
+                        <P>Skilled in crafting responsive and dynamic web applications, focusing on creating robust
+                            front-end experiences. I utilize modern web technologies to build engaging and functional
+                            digital platforms.</P>
                     </div>
                 </div>
                 <div class="box">
                     <div>
                         <img src="paint-brush-128.png" alt="">
                         <h2>GRAPHIC DESIGN</h2>
-                        <P>Lorem ipsum adipisicing elit. Eveniet, eligendi omnis vero, obcaecati accusamus iusto ad
-                            Sequi
-                            ducimus corrupti non rerum imus corrupti non rerum Lorem ipsum adipisicing elit. Eveniet,
-                            eligendi
-                            omnis vero, obcaecati accusamus iusto ad Sequi</P>
+                        <P>Adept at creating visually compelling assets that communicate effectively and enhance brand
+                            identity. My focus is on producing impactful designs that resonate with target audiences and
+                            elevate digital content.</P>
                     </div>
                 </div>
                 <div class="box">
                     <div>
                         <img src="ux.png" alt="">
                         <h2>UI UX DESIGN</h2>
-                        <P>Lorem ipsum adipisicing elit. Eveniet, eligendi omnis vero, obcaecati accusamus iusto ad
-                            Sequi
-                            ducimus corrupti non rerum imus corrupti non rerum Lorem ipsum adipisicing elit. Eveniet,
-                            eligendi
-                            omnis vero, obcaecati accusamus iusto ad Sequi</P>
+                        <P>Committed to designing intuitive and user-centered digital interfaces. I blend aesthetics
+                            with usability to ensure seamless interactions, creating experiences that are both enjoyable
+                            and highly efficient for users.</P>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <section class="skills-section" id="skills">
-            <div>
+            <div class="left-panel" role="tablist" aria-label="Content selection">
                 <h1>Why hire me ?</h1>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, porro. Ut assumenda voluptates magni
-                    dolor minima necessitatibus eveniet, vel tempora inventore. Sequi provident laborum repellat </p>
+                <p>Choose me because I'm not just passionate about web development; I'm a driven problem-solver and a
+                    genuinely collaborative teammate. I've built a solid foundation in core web principles, and I'm
+                    ready to channel my enthusiasm and continuous learning into delivering impactful digital solutions
+                    and growing alongside your company. </p>
                 <br>
                 <div class="skills-buttons">
-                    <button> Experience</button>
-                    <button> Skills <span> uuik</span></button>
-                    <button> Education</button>
+                    <button id="experiences-btn" class="active" role="tab" aria-selected="true"
+                        aria-controls="content-panel" tabindex="0"> Experience</button>
+                    <button id="skills-btn" role="tab" aria-selected="false" aria-controls="content-panel"
+                        tabindex="-1">
+                        Skills <span> uuik</span></button>
+                    <button id="education-btn" role="tab" aria-selected="false" aria-controls="content-panel"
+                        tabindex="-1">
+                        Education</button>
                 </div>
             </div>
-            <div>
-                <h1>My <span>Skills</span></h1>
+            <div class="right-panel" id="content-panel" role="tabpanel" tabindex="0" aria-labelledby="experiences-btn">
+
+                <h2>My <span>Experiences</span></h2>
                 <br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A minima voluptas reiciendis animi?
-                    Veritatis doloribus quas magni deleniti, corrupti nihil dolorem ex. Esse praesentium autem</p>
-                <div class="skills-container">
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/732/732212.png" alt="HTML5">
-                    </div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS3">
-                    </div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
-                            alt="JavaScript"></div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma">
-                    </div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React">
-                    </div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png"
-                            alt="Photoshop"></div>
-                </div>
-            </div>
+                <br>
+                <p>Passionate Junior Web Developer diligently building a strong foundation in HTML5, CSS3, and
+                    JavaScript
+                    fundamentals. Driven by curiosity and a commitment to continuous learning, I am actively honing my
+                    skills through hands-on projects, transforming ideas into functional and aesthetically pleasing web
+                    experiences. Eager to contribute and grow within a dynamic development environment</p>
+
         </section>
 
 
@@ -185,8 +180,9 @@
                             <div class="service-info" id="serviceInfo">
                                 <h3 class="service-title" id="serviceTitle">Tourism In Ghana Project</h3>
                                 <p class="service-description" id="serviceDescription">
-                                    Transform your digital presence with cutting-edge web solutions that captivate and
-                                    convert.
+                                    A professional tourism website, expertly developed with HTML, CSS, and JavaScript,
+                                    showcasing key Ghanaian destinations and integrated booking features for a seamless
+                                    user experience.
                                 </p>
                                 <ul class="service-features" id="serviceFeatures">
 
@@ -195,9 +191,11 @@
                                     </li>
                                     <br>
                                     <div class="pro-icons">
-                                        <div><a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"
-                                                style="color: #ffffff;"></i></a></div>
-                                        <div><a href="index.html"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                                        <div><a href="https://pearson-ziyaad-re.vercel.app/index.html"><i
+                                                    class="fa-solid fa-arrow-up-right-from-square"
+                                                    style="color: #ffffff;"></i></a></div>
+                                        <div><a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re"><i
+                                                    class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
                                     </div>
                                 </ul>
                             </div>
@@ -206,8 +204,7 @@
                         <div class="image-section">
                             <div class="image-container">
                                 <img class="service-image" id="serviceImage"
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
-                                    alt="Web Development">
+                                    src="pearson-ziyaad-re.vercel.app_index.html.png" alt="Web Development">
                             </div>
                             <div class="navigation-arrows">
                                 <button class="arrow-btn" id="prevBtn">←</button>
@@ -232,9 +229,8 @@
                 <div class="form-container">
                     <h1><span>Let's work together</span></h1>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt doloremque neque
-                        consequuntur quisquam enim quas aperiam porro veniam velit eveniet dolorum suscipit facilis aut
-                        est, ex recusandae. Laborum, tenetur.</p>
+                    <p>I specialize in crafting intuitive and visually compelling front-end solutions. Let's collaborate
+                        to bring your digital vision to life with precision and impact.</p>
                     <br>
                     <div class="first">
                         <input type="text" placeholder="First name" name="First name" required>

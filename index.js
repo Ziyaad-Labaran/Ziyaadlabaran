@@ -62,44 +62,44 @@ document.addEventListener('DOMContentLoaded', () => {
 const services = [
     {
         title: "Tourism in Ghana Project",
-        description: "Transform your digital presence with cutting-edge web solutions that captivate and convert.",
+        description: "A professional tourism website, expertly developed with HTML, CSS, and JavaScript, showcasing key Ghanaian destinations and integrated booking features for a seamless user experience.",
         features: [
             "<hr>",
-             ` <div class="pro-icons">
-                                        <div> <a href="index.html"<i class="fa-solid fa-arrow-up-right-from-square"
+            ` <div class="pro-icons">
+                                        <div> <a href="https://pearson-ziyaad-re.vercel.app/index.html"<i class="fa-solid fa-arrow-up-right-from-square"
                                                 style="color: #ffffff;"></i></a></div>
-                                        <div><a href="index.html"<i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                                        <div><a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re"<i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
                                     </div> `
-            
+
         ],
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
+        image: "pearson-ziyaad-re.vercel.app_index.html.png"
     },
     {
 
         title: "Climate change project",
-        description: "Create powerful mobile experiences that engage users across iOS and Android platforms.",
+        description: "A focused website that educates and mobilizes youth for climate action, highlighting initiatives like tree planting and cleanup campaigns to foster environmental awareness and engagement.",
         features: [
             "<hr>",
             ` <div class="pro-icons">
-                                        <div> <a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"
+                                        <div> <a href="https://pearson-climate.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
                                                 style="color: #ffffff;"></i></a></div>
-                                        <div><a href="index.html"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                                        <div><a href="https://github.com/Ziyaad-Labaran/pearson-climate"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
                                     </div> `
         ],
-        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop&crop=center"
+        image: "pearson-climate.vercel.app_.png"
     },
     {
         title: "Mobile apps and Web apps project",
-        description: "Amplify your brand reach with data-driven marketing strategies that deliver measurable results.",
+        description: "This professionally developed website serves as a digital agency's portfolio, showcasing expertise in custom web and mobile application development with a focus on delivering scalable digital solutions for businesses.",
         features: [
             "<hr>",
-             ` <div class="pro-icons">
-                                        <div> <a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"
+            ` <div class="pro-icons">
+                                        <div> <a href="https://mobile-ziyaad.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
                                                 style="color: #ffffff;"></i></a></div>
-                                        <div><a href="index.html"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                                        <div><a href="https://github.com/Ziyaad-Labaran/mobile-ziyaad"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
                                     </div> `
         ],
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
+        image: "mobile-ziyaad.vercel.app_.png"
     },
     {
         title: "E-commerce project",
@@ -133,7 +133,7 @@ function updateService(newIndex, direction = 'right') {
     if (isAnimating) return;
     isAnimating = true;
 
-    // Animate out current content
+
     serviceInfo.classList.add('fade-out');
 
     if (direction === 'right') {
@@ -143,7 +143,7 @@ function updateService(newIndex, direction = 'right') {
     }
 
     setTimeout(() => {
-        // Update content
+
         currentIndex = newIndex;
         const service = services[currentIndex];
 
@@ -157,12 +157,11 @@ function updateService(newIndex, direction = 'right') {
         serviceImage.src = service.image;
         serviceImage.alt = service.title;
 
-        // Update indicators
         indicators.forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
         });
 
-        // Animate in new content
+
         serviceInfo.classList.remove('fade-out');
         serviceImage.classList.remove('slide-out-right', 'slide-out-left');
 
@@ -182,7 +181,6 @@ function prevService() {
     updateService(newIndex, 'left');
 }
 
-// Event listeners
 nextBtn.addEventListener('click', nextService);
 prevBtn.addEventListener('click', prevService);
 
@@ -195,11 +193,177 @@ indicators.forEach((dot, index) => {
     });
 });
 
-// Auto-advance every 6 seconds
-setInterval(nextService, 6000);
+setInterval(nextService, 7000);
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') nextService();
     if (e.key === 'ArrowLeft') prevService();
 });
+
+
+const skills = document.querySelectorAll('.skills-container div');
+
+const skillsObserverCallback = (entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            entry.target.style.opacity = 1; // Ensure it's visible
+            entry.target.style.transform = 'translateY(0)'; // Reset transform
+        }
+    });
+};
+
+const skillsObserver = new IntersectionObserver(skillsObserverCallback, {
+    threshold: 0.1
+});
+
+skills.forEach(skill => {
+    skillsObserver.observe(skill);
+});
+
+
+
+const buttons = {
+    'experiences-btn': {
+        title: 'My Experiences',
+        content: `
+        <h2>My <span>Experiences</span></h2>
+        <br>
+        <br>
+        <p>Passionate Junior Web Developer diligently building a strong foundation in HTML5, CSS3, and JavaScript
+                fundamentals. Driven by curiosity and a commitment to continuous learning, I am actively honing my
+                skills through hands-on projects, transforming ideas into functional and aesthetically pleasing web
+                experiences. Eager to contribute and grow within a dynamic development environment.</p>
+        `
+    },
+    'skills-btn': {
+        title: 'My Skills',
+        content: `
+         <h1>My <span>Skills</span></h1>
+                <br>
+                <p>I have strong skills in a variety of technologies and tools including:</p>
+                <div class="skills-container">
+                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/732/732212.png" alt="HTML5">
+                    </div>
+                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS3">
+                    </div>
+                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+                            alt="JavaScript"></div>
+                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma">
+                    </div>
+                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React">
+                    </div>
+                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png"
+                            alt="Photoshop"></div>
+                </div> 
+            </div>`
+    },
+    'education-btn': {
+        title: 'My Education',
+        content: `
+        <h2>My <span>Education</span></h2>
+        <br>
+        <p>I hold the following academic qualifications:</p>
+        <br>
+        <ul>
+          <li>West African Senior School Certificate (2021-2024)</li>
+          <li>Pearson BTEC Level 2 Certificate in Creative Media Skills (2024 - 2025)</li>
+        </ul>`
+    },
+};
+
+const leftPanel = document.querySelector('.left-panel');
+const contentPanel = document.getElementById('content-panel');
+
+function updateContent(buttonId) {
+
+    contentPanel.innerHTML = buttons[buttonId].content;
+
+
+    contentPanel.setAttribute('aria-labelledby', buttonId);
+}
+
+function clearActive() {
+    const btns = leftPanel.querySelectorAll('button');
+    btns.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+        btn.setAttribute('tabindex', '-1');
+    });
+}
+
+leftPanel.addEventListener('click', (event) => {
+    if (event.target.tagName === 'BUTTON') {
+        clearActive();
+        event.target.classList.add('active');
+        event.target.setAttribute('aria-selected', 'true');
+        event.target.setAttribute('tabindex', '0');
+        updateContent(event.target.id);
+        event.target.focus();
+    }
+});
+
+leftPanel.addEventListener('keydown', (event) => {
+    const btns = Array.from(leftPanel.querySelectorAll('button'));
+    const currentIndex = btns.findIndex(btn => btn.classList.contains('active'));
+    if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        const nextIndex = (currentIndex + 1) % btns.length;
+        btns[nextIndex].click();
+        btns[nextIndex].focus();
+    } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
+        event.preventDefault();
+        const prevIndex = (currentIndex - 1 + btns.length) % btns.length;
+        btns[prevIndex].click();
+        btns[prevIndex].focus();
+    }
+});
+
+const texts = ["Frontend Developer", "Graphic Designer", "UI/UX Designer"];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+
+(function type() {
+    if (count === texts.length) count = 0;
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.getElementById('typed-text').textContent = letter;
+
+    if (letter.length === currentText.length) {
+        setTimeout(() => {
+            index = 0;
+            count++;
+            type();
+        }, 2000);
+    } else {
+        setTimeout(type, 100);
+    }
+})();
+// /////////////////////
+
+const Menu = document.getElementById('hamburger');
+const mobile = document.querySelector('nav');
+
+Menu.addEventListener("click", () => {
+    mobile.style.left = "0"
+});
+
+const cloSe = document.getElementById('close');
+const humburger = document.querySelector('nav');
+cloSe.addEventListener("click", () => {
+    mobile.style.left = "-100%"
+});
+const nav = document.getElementById('nav');
+const black = document.getElementById('nav');
+nav.addEventListener("click", () => {
+    black.style.left = "-100%"
+});
+
+// const body = document.querySelector('body');
+// const goaway = document.getElementById('nav');
+// goaway.addEventListener("click", () => {
+//  goaway.style.left = "-100%"
+// });
