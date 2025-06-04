@@ -789,6 +789,11 @@
            justify-content: center;
        }
 
+       .hero-image {
+           display: flex;
+           justify-content: center;
+       }
+
        nav {
            position: fixed;
            top: 0;
