@@ -782,7 +782,9 @@
        .hamburger {
            display: flex;
        }
-
+.social-icons{
+    display:flex;
+    justify-content: center;
        nav {
            position: fixed;
            top: 0;
@@ -930,9 +932,7 @@
        .hero {
            padding: 3rem 2rem;
        }
-.social-icons{
-    display:flex;
-    justify-content: center;
+
 }
        .hero-text {
            max-width: 60%;
