@@ -759,10 +759,11 @@
        animation: blink 0.7s steps(1) infinite;
        color: black;
    }
-   #nav i{
-    display: none;
 
-}
+   #nav i {
+       display: none;
+
+   }
 
    @keyframes blink {
 
@@ -782,9 +783,12 @@
        .hamburger {
            display: flex;
        }
-.social-icons{
-    display:flex;
-    justify-content: center;
+
+       .social-icons {
+           display: flex;
+           justify-content: center;
+       }
+
        nav {
            position: fixed;
            top: 0;
@@ -799,12 +803,13 @@
            z-index: 1000;
        }
 
-#nav i{
-    display: flex;
-    position: absolute;
-    right: 50px;
-    top: 60px;
-}
+       #nav i {
+           display: flex;
+           position: absolute;
+           right: 50px;
+           top: 60px;
+       }
+
        nav.active {
            left: 0;
        }
@@ -933,39 +938,40 @@
            padding: 3rem 2rem;
        }
 
-}
-       .hero-text {
-           max-width: 60%;
-       }
+   }
 
-       .hero-image {
-           width: min(24rem, 70vw);
-           height: min(24rem, 70vw);
-       }
+   .hero-text {
+       max-width: 60%;
+   }
 
-       .counter {
-           padding: 2rem;
-       }
+   .hero-image {
+       width: min(24rem, 70vw);
+       height: min(24rem, 70vw);
+   }
 
-       .about {
-           padding: 3rem 2rem;
-       }
+   .counter {
+       padding: 2rem;
+   }
 
-       .skills-container {
-           grid-template-columns: repeat(3, 1fr);
-       }
+   .about {
+       padding: 3rem 2rem;
+   }
 
-       .box-container {
-           justify-content: space-around;
-       }
+   .skills-container {
+       grid-template-columns: repeat(3, 1fr);
+   }
 
-       .box {
-           max-width: 22rem;
-       }
+   .box-container {
+       justify-content: space-around;
+   }
 
-       .contact-section {
-           padding: 3rem 2rem;
-       }
+   .box {
+       max-width: 22rem;
+   }
+
+   .contact-section {
+       padding: 3rem 2rem;
+   }
    }
 
 
