@@ -605,11 +605,11 @@
    textarea,
    select {
        width: 100%;
-       background: rgb(59, 59, 59);
+       background: rgba(54, 54, 54, 0.445);
        padding: 1rem;
        border-radius: 10px;
        border: none;
-       color: white;
+       color: rgb(255, 255, 255);
        margin-bottom: 1rem;
        transition: all 0.3s ease;
 
