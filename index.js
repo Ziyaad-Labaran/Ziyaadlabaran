@@ -255,6 +255,10 @@ const buttons = {
                     </div>
                     <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png"
                             alt="Photoshop"></div>
+                             <div class="skill"><img src="adobe-illustrator-icon-free-png.png"
+                            alt="illustrator"></div>
+                               <div class="skill"><img src="1691829322canva-app-logo-png.png"
+                            alt="canva"></div>
                 </div> 
             </div>`
     },
