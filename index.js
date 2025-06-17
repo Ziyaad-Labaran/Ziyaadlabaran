@@ -259,6 +259,8 @@ const buttons = {
                             alt="illustrator"></div>
                                <div class="skill"><img src="1691829322canva-app-logo-png.png"
                             alt="canva"></div>
+                            <div class="skill"><img src="174881.png"
+                            alt="canva"></div>
                 </div> 
             </div>`
     },
