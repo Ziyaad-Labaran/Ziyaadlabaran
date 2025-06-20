@@ -251,6 +251,8 @@ const buttons = {
                             alt="JavaScript"></div>
                     <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma">
                     </div>
+                    <div class="skill"><img src="adobe-xd-icon-1024x1024-njjmrpui.png"
+                            alt="Adobe Xd"></div>
                     <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React">
                     </div>
                     <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png"
