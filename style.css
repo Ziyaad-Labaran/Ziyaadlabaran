@@ -405,7 +405,6 @@
     display:flex;
     justify-content:center;
     gap: 25px;
-    border:none;
    }
 
 #works-choose{
@@ -413,6 +412,7 @@
     background-color: var(--secondary-color);
     border-radius: 12px;
     color:white;
+    border:none;
 }
    .services-container {
        max-width: 1200px;
