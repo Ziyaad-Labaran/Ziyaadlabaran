@@ -376,6 +376,7 @@ nav.addEventListener("click", () => {
  const Clickbut = document.getElementById("ux-de")
 const Appear = document.getElementById("service-main")
 const webDev = document.getElementById("web")
+const Graphic = document.getElementById("graph-de")
 
  Clickbut.addEventListener("click",()=>{
     messageDis.style.display = "none";
@@ -386,6 +387,11 @@ const webDev = document.getElementById("web")
 webDev.addEventListener("click",()=>{
     messageDis.style.display = "flex"
     Appear.innerText = " Web Development"
+})
+
+Graphic.addEventListener("click",()=>{
+     messageDis.style.display = "flex"
+    Appear.innerText = " Graphic Design"
 })
 
 
