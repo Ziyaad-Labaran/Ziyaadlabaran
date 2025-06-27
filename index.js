@@ -386,7 +386,7 @@ const Graphic = document.getElementById("graph-de")
 
 webDev.addEventListener("click",()=>{
     messageDis.style.display = "flex"
-    // Appear.innerText = " Web Development"
+    Appear.innerText = $(messageDis)
 })
 
 Graphic.addEventListener("click",()=>{
