@@ -380,18 +380,18 @@ const Graphic = document.getElementById("graph-de")
 
  Clickbut.addEventListener("click",()=>{
     messageDis.style.display = "none";
-    Appear.textContent = " I just appeared ";
+    Appear.innerHTML = " I just appeared ";
 
 })
 
 webDev.addEventListener("click",()=>{
     messageDis.style.display = "flex"
-    Appear.textContent = "<h1>This is web dev<h1/>"
+    Appear.innerHTML = "<h1>This is web dev<h1/>"
 })
 
 Graphic.addEventListener("click",()=>{
      messageDis.style.display = "flex"
-    Appear.textContent = "<h1> Graphic Design <h1/>"
+    Appear.innerHTML = "<h1> Graphic Design <h1/>"
 })
 
 
