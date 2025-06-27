@@ -474,7 +474,41 @@ webDev.addEventListener("click",()=>{
 Graphic.addEventListener("click",()=>{
      messageDis.style.display = "flex"
     Appear.innerHTML = `
-    <h1>Graphic loading</h1>
+     <section class="portfolio-section">
+  <div class="portfolio-card">
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <div class="portfolio-content">
+      <h3>Creative Dashboard App</h3>
+      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+      <a href="" target="_blank" class="btn">View Project</a>
+    </div>
+  </div>
+  <div class="portfolio-card">
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <div class="portfolio-content">
+      <h3>Creative Dashboard App</h3>
+      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+      <a href="" target="_blank" class="btn">View Project</a>
+    </div>
+  </div>
+   <div class="portfolio-card">
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <div class="portfolio-content">
+      <h3>Creative Dashboard App</h3>
+      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+      <a href="" target="_blank" class="btn">View Project</a>
+    </div>
+  </div>
+   <div class="portfolio-card">
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <div class="portfolio-content">
+      <h3>Creative Dashboard App</h3>
+      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+      <a href="" target="_blank" class="btn">View Project</a>
+    </div>
+  </div>
+  
+</section>
 
     `
 })
