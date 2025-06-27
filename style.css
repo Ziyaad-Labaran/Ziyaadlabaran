@@ -401,6 +401,11 @@
        font-size: 2rem;
        margin-bottom: 3rem;
    }
+   .choose-work{
+    display:flex;
+    justify-content:center;
+   }
+
 #works-choose{
     padding: 10px;
     background-color: var(--secondary-color);
