@@ -404,12 +404,14 @@
    .choose-work{
     display:flex;
     justify-content:center;
+    gap: 25px;
    }
 
 #works-choose{
     padding: 10px;
     background-color: var(--secondary-color);
     border-radius: 12px;
+    color:white;
 }
    .services-container {
        max-width: 1200px;
