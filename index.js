@@ -391,7 +391,7 @@ webDev.addEventListener("click",()=>{
 
 Graphic.addEventListener("click",()=>{
      messageDis.style.display = "flex"
-    Appear.textContent = "<h1> Graphic Design </h1>"
+    Appear.textContent = "<h1> Graphic Design <h1/>"
 })
 
 
