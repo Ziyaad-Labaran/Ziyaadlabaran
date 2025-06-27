@@ -423,6 +423,78 @@
        border: 1px solid var(--primary-color);
    }
 
+.portfolio-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap:30px;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.2);
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.portfolio-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-content p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0078d4;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005ea2;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
    .services-container {
        max-width: 1200px;
        width: 100%;
