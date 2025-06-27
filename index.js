@@ -350,7 +350,6 @@ let letter = '';
         setTimeout(type, 100);
     }
 })();
-// /////////////////////
 
 const Menu = document.getElementById('hamburger');
 const mobile = document.querySelector('nav');
@@ -371,7 +370,6 @@ nav.addEventListener("click", () => {
 });
 
 
-
  const  messageDis = document.getElementById("service-cont")
  const Clickbut = document.getElementById("ux-de")
 const Appear = document.getElementById("service-main")
@@ -383,7 +381,7 @@ const Graphic = document.getElementById("graph-de")
     Appear.innerHTML = `
     <section class="portfolio-section">
   <div class="portfolio-card">
-    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Screenshot (37).png" alt="Project thumbnail" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
@@ -391,7 +389,7 @@ const Graphic = document.getElementById("graph-de")
     </div>
   </div>
   <div class="portfolio-card">
-    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Screenshot (38).png" alt="Project thumbnail" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
@@ -512,5 +510,3 @@ Graphic.addEventListener("click",()=>{
 
     `
 })
-
-
