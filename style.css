@@ -401,7 +401,11 @@
        font-size: 2rem;
        margin-bottom: 3rem;
    }
-
+#choose-work{
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+}
    .services-container {
        max-width: 1200px;
        width: 100%;
