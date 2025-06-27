@@ -409,7 +409,7 @@
        gap: 25px;
    }
 
-   #works-choose {
+   .work-choose{
        padding: 10px;
        background-color: var(--secondary-color);
        border-radius: 12px;
@@ -419,7 +419,7 @@
 
    }
 
-   #works-choose:hover {
+    .work-choose:hover {
        border: 1px solid var(--primary-color);
    }
 

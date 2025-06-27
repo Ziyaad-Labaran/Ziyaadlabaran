@@ -370,8 +370,11 @@ nav.addEventListener("click", () => {
     black.style.left = "-100%"
 });
 
-// const body = document.querySelector('body');
-// const goaway = document.getElementById('nav');
-// goaway.addEventListener("click", () => {
-//  goaway.style.left = "-100%"
-// });
+ const  messageDis = document.getElementById("service-cont")
+ const Clickbut = document.getElementById("ux-de")
+
+ Clickbut.addEventListener("click",()=>{
+    messageDis.style.display = "none";
+
+})
+
