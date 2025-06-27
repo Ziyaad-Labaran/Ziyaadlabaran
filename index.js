@@ -436,6 +436,7 @@ webDev.addEventListener("click",()=>{
 Graphic.addEventListener("click",()=>{
      messageDis.style.display = "flex"
     Appear.innerHTML = `
+    <h1>Graphic loading</h1>
 
     `
 })
