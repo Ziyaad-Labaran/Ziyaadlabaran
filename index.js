@@ -374,9 +374,10 @@ nav.addEventListener("click", () => {
 
  const  messageDis = document.getElementById("service-cont")
  const Clickbut = document.getElementById("ux-de")
+const Appear = document.getElementById("service-main")
 
  Clickbut.addEventListener("click",()=>{
     messageDis.style.display = "none";
-    messageDis.innerText = " <h1> I just appeared</>"
+    Appear.innerText = " <h1> I just appeared <h1/>";
 
 })
