@@ -1,7 +1,7 @@
    :root {
        --primary-color: orange;
        --secondary-color: rgba(255, 255, 255, 0.1);
-       font-size: larger;
+       font-size: large;
    }
 
    * {
