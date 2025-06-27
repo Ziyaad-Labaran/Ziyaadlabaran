@@ -383,35 +383,35 @@ const Graphic = document.getElementById("graph-de")
     Appear.innerHTML = `
     <section class="portfolio-section">
   <div class="portfolio-card">
-    <img src="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL2Rlc2lnbndpdGhtZTA5X3Bob3RvX29mX2Zpc3Rfb25fZmlyZV9mbGFtZV9yZWFsaXN0aWNfaXNvbGF0ZWRfb182MDk1NzE2MC0wNjhiLTQ4YzUtYjU4YS0xOWJjOGQ1NDk0OGNfMS5qcGc.jpg" alt="Project thumbnail" class="portfolio-image" />
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL2Rlc2lnbndpdGhtZTA5X3Bob3RvX29mX2Zpc3Rfb25fZmlyZV9mbGFtZV9yZWFsaXN0aWNfaXNvbGF0ZWRfb182MDk1NzE2MC0wNjhiLTQ4YzUtYjU4YS0xOWJjOGQ1NDk0OGNfMS5qcGc.jpg" target="_blank" class="btn">View Project</a>
+      <a href="" target="_blank" class="btn">View Project</a>
     </div>
   </div>
   <div class="portfolio-card">
-    <img src="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL2Rlc2lnbndpdGhtZTA5X3Bob3RvX29mX2Zpc3Rfb25fZmlyZV9mbGFtZV9yZWFsaXN0aWNfaXNvbGF0ZWRfb182MDk1NzE2MC0wNjhiLTQ4YzUtYjU4YS0xOWJjOGQ1NDk0OGNfMS5qcGc.jpg" alt="Project thumbnail" class="portfolio-image" />
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="https://your-project-link.com" target="_blank" class="btn">View Project</a>
+      <a href="" target="_blank" class="btn">View Project</a>
     </div>
   </div>
    <div class="portfolio-card">
-    <img src="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL2Rlc2lnbndpdGhtZTA5X3Bob3RvX29mX2Zpc3Rfb25fZmlyZV9mbGFtZV9yZWFsaXN0aWNfaXNvbGF0ZWRfb182MDk1NzE2MC0wNjhiLTQ4YzUtYjU4YS0xOWJjOGQ1NDk0OGNfMS5qcGc.jpg" alt="Project thumbnail" class="portfolio-image" />
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="https://your-project-link.com" target="_blank" class="btn">View Project</a>
+      <a href="" target="_blank" class="btn">View Project</a>
     </div>
   </div>
    <div class="portfolio-card">
-    <img src="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL2Rlc2lnbndpdGhtZTA5X3Bob3RvX29mX2Zpc3Rfb25fZmlyZV9mbGFtZV9yZWFsaXN0aWNfaXNvbGF0ZWRfb182MDk1NzE2MC0wNjhiLTQ4YzUtYjU4YS0xOWJjOGQ1NDk0OGNfMS5qcGc.jpg" alt="Project thumbnail" class="portfolio-image" />
+    <img src="" alt="Project thumbnail" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="https://your-project-link.com" target="_blank" class="btn">View Project</a>
+      <a href="" target="_blank" class="btn">View Project</a>
     </div>
   </div>
   
