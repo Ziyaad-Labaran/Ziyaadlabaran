@@ -379,7 +379,7 @@ const webDev = document.getElementById("web")
 
  Clickbut.addEventListener("click",()=>{
     messageDis.style.display = "none";
-    Appear.innerText = " `<h1> I just appeared <h1/>`";
+    Appear.innerText = " I just appeared ";
 
 })
 
