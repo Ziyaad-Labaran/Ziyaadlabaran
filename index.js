@@ -381,7 +381,7 @@ const Graphic = document.getElementById("graph-de")
     Appear.innerHTML = `
     <section class="portfolio-section">
   <div class="portfolio-card">
-    <img src="Screenshot (38).png" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Screenshot (38).png" alt="UI/UX Design 1" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
@@ -389,27 +389,27 @@ const Graphic = document.getElementById("graph-de")
     </div>
   </div>
   <div class="portfolio-card">
-    <img src="Screenshot (42).png" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Screenshot (42).png" alt="UI/UX Design 2" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" target="_blank" class="btn">View Project</a>
+      <a href="" class="btn">View Project</a>
     </div>
   </div>
    <div class="portfolio-card">
-    <img src="Screenshot (40).png" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Screenshot (40).png" alt="UI/UX Design 3" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" target="_blank" class="btn">View Project</a>
+      <a href=""  class="btn">View Project</a>
     </div>
   </div>
    <div class="portfolio-card">
-    <img src="Screenshot (37).png" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Screenshot (37).png" alt="UI/UX Design 4" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" target="_blank" class="btn">View Project</a>
+      <a href="" class="btn">View Project</a>
     </div>
   </div>
   
