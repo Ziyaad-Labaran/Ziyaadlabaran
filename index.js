@@ -397,7 +397,7 @@ const Graphic = document.getElementById("graph-de")
     </div>
   </div>
    <div class="portfolio-card">
-    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Screenshot (40).png" alt="Project thumbnail" class="portfolio-image" />
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
