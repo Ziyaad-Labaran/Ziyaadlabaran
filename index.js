@@ -385,7 +385,7 @@ const Graphic = document.getElementById("graph-de")
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" target="_blank" class="btn">View Project</a>
+      <a href="" class="btn">View Project</a>
     </div>
   </div>
   <div class="portfolio-card">
@@ -409,7 +409,7 @@ const Graphic = document.getElementById("graph-de")
     <div class="portfolio-content">
       <h3>Creative Dashboard App</h3>
       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" class="btn">View Project</a>
+      <a href=""  class="btn">View Project</a>
     </div>
   </div>
   
