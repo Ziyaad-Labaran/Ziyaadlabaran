@@ -476,35 +476,35 @@ Graphic.addEventListener("click",()=>{
   <div class="portfolio-card">
     <img src="Ziyaad estate2.jpg" alt="Ziyaad graphic design 1" class="portfolio-image" />
     <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="Ziyaad estate2.jpg" class="btn">View Project</a>
+    //   <h3>Creative Dashboard App</h3>
+    //   <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+    //   <a href="Ziyaad estate2.jpg" class="btn">View Project</a>
     </div>
   </div>
-  <div class="portfolio-card">
-    <img src="" alt="Project thumbnail" class="portfolio-image" />
-    <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" target="_blank" class="btn">View Project</a>
-    </div>
-  </div>
-   <div class="portfolio-card">
-    <img src="" alt="Project thumbnail" class="portfolio-image" />
-    <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" target="_blank" class="btn">View Project</a>
-    </div>
-  </div>
-   <div class="portfolio-card">
-    <img src="" alt="Project thumbnail" class="portfolio-image" />
-    <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
-      <a href="" target="_blank" class="btn">View Project</a>
-    </div>
-  </div>
+//   <div class="portfolio-card">
+//     <img src="" alt="Project thumbnail" class="portfolio-image" />
+//     <div class="portfolio-content">
+//       <h3>Creative Dashboard App</h3>
+//       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+//       <a href="" target="_blank" class="btn">View Project</a>
+//     </div>
+//   </div>
+//    <div class="portfolio-card">
+//     <img src="" alt="Project thumbnail" class="portfolio-image" />
+//     <div class="portfolio-content">
+//       <h3>Creative Dashboard App</h3>
+//       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+//       <a href="" target="_blank" class="btn">View Project</a>
+//     </div>
+//   </div>
+//    <div class="portfolio-card">
+//     <img src="" alt="Project thumbnail" class="portfolio-image" />
+//     <div class="portfolio-content">
+//       <h3>Creative Dashboard App</h3>
+//       <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+//       <a href="" target="_blank" class="btn">View Project</a>
+//     </div>
+//   </div>
   
 </section>
 
