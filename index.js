@@ -481,7 +481,7 @@ Graphic.addEventListener("click",()=>{
    
   </div>
    <div class="portfolio-card">
-    <img src="" alt="Project thumbnail" class="portfolio-image" />
+    <img src="Ziyaads work (2).jpg" alt="Project thumbnail" class="portfolio-image" />
     
   </div>
    <div class="portfolio-card">
