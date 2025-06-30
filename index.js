@@ -473,9 +473,6 @@ Graphic.addEventListener("click",()=>{
      messageDis.style.display = "flex"
     Appear.innerHTML = `
      <section class="portfolio-section">
-  <div class="portfolio-card">
-    <img src="Ziyaad estate2.jpg" alt="Ziyaad graphic design 1" class="portfolio-image" />
-  </div>
    <div class="portfolio-card">
     <img src="Ziyaads work (2).jpg" alt="Project thumbnail" class="portfolio-image" />
     
@@ -484,6 +481,9 @@ Graphic.addEventListener("click",()=>{
     <img src="Kingzii.jpg" alt="Project thumbnail" class="portfolio-image" />
   </div>
   
+   <div class="portfolio-card">
+    <img src="Ziyaad estate2.jpg" alt="Ziyaad graphic design 1" class="portfolio-image" />
+  </div>
 </section>
 
     `
