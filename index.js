@@ -383,32 +383,29 @@ const Graphic = document.getElementById("graph-de")
   <div class="portfolio-card">
     <img src="Screenshot (38).png" alt="UI/UX Design 1" class="portfolio-image" />
     <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+      
       <a href="https://www.figma.com/proto/FlMeQlZzC83lwWvNkEQUVW/Food-app?node-id=83-44&starting-point-node-id=1%3A2&t=Jv8VqJJyPEogejnP-1" class="btn">View Project</a>
     </div>
   </div>
   <div class="portfolio-card">
     <img src="Screenshot (42).png" alt="UI/UX Design 2" class="portfolio-image" />
     <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+      
       <a href="https://www.figma.com/proto/GscyDiKXx8TuZJ3Kixy2mM/Ziyaad-mobile?node-id=172-2&starting-point-node-id=172%3A2&t=ETFeHcyERmXaMq3l-1" class="btn">View Project</a>
     </div>
   </div>
    <div class="portfolio-card">
     <img src="Screenshot (40).png" alt="UI/UX Design 3" class="portfolio-image" />
     <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+     
       <a href="https://www.figma.com/proto/vF0VYuuE9OJ0IKu2Eg9eAV/Library-website?node-id=1-2&starting-point-node-id=1%3A2&t=EHOJ6wCMAsl4ZY7K-1"  class="btn">View Project</a>
     </div>
   </div>
    <div class="portfolio-card">
     <img src="Screenshot (37).png" alt="UI/UX Design 4" class="portfolio-image" />
     <div class="portfolio-content">
-      <h3>Creative Dashboard App</h3>
-      <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+    //   <h3>Creative Dashboard App</h3>
+    //   <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
       <a href="https://www.figma.com/proto/kva0wFBsdwhNAy9MwcStIQ/Tiktok-app?node-id=1-2&starting-point-node-id=44%3A18&t=52S7WkpyFiYpmSZ8-1"  class="btn">View Project</a>
     </div>
   </div>
