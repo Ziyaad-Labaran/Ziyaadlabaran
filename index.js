@@ -404,8 +404,7 @@ const Graphic = document.getElementById("graph-de")
    <div class="portfolio-card">
     <img src="Screenshot (37).png" alt="UI/UX Design 4" class="portfolio-image" />
     <div class="portfolio-content">
-    //   <h3>Creative Dashboard App</h3>
-    //   <p>A modern React dashboard with sleek UI, chart animations, and responsive design.</p>
+    
       <a href="https://www.figma.com/proto/kva0wFBsdwhNAy9MwcStIQ/Tiktok-app?node-id=1-2&starting-point-node-id=44%3A18&t=52S7WkpyFiYpmSZ8-1"  class="btn">View Project</a>
     </div>
   </div>
