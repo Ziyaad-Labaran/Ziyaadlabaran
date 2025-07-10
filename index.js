@@ -113,7 +113,7 @@ const services = [
                                     </div> `
 
         ],
-        image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center"
+        image: "ecommerce-zii.vercel.app_.png"
     },
 ];
 
