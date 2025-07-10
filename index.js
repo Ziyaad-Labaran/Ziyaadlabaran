@@ -103,7 +103,7 @@ const services = [
     },
     {
         title: "E-commerce project",
-        description: "Craft exceptional user experiences through thoughtful design that balances beauty with functionality.",
+        description: " This is  fully functional e-commerce platform designed for intuitive navigation and an optimized shopping experience in electronics and home appliances.",
         features: [
             "<hr>",
             ` <div class="pro-icons">
