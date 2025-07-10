@@ -109,7 +109,7 @@ const services = [
             ` <div class="pro-icons">
                                         <div> <a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"
                                                 style="color: #ffffff;"></i></a></div>
-                                        <div><a href="index.html"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                                        <div><a href="https://ecommerce-zii.vercel.app/"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
                                     </div> `
 
         ],
