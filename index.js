@@ -264,7 +264,7 @@ const buttons = {
                             <div class="skill"><img src="174881.png"
                             alt="canva"></div>
  <div class="skill"><img src="GSAP-Logo.png"
-                            alt="Gsap logo"></div>
+                            alt="Gsap logo" width="100%"></div>
                             
                 </div> 
             </div>`
