@@ -684,7 +684,7 @@
    input:hover {
        background-color: rgba(192, 190, 190, 0.418);
    }
-   input:focus {
+   input:focus , select:focus ,textarea:focus {
   border: 3px solid var(--primary-color);
 }
 
