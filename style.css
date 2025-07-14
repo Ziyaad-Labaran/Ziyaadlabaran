@@ -684,6 +684,9 @@
    input:hover {
        background-color: rgba(192, 190, 190, 0.418);
    }
+   input[type=text]:focus {
+  border: 3px solid var(--primary-color);
+}
 
    select:hover {
        background-color: rgba(192, 190, 190, 0.418);
