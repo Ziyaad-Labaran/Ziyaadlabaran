@@ -297,6 +297,47 @@
   AOS.init();
 </script>
         <script src="index.js"></script>
+        <script>
+  // Disable right-click
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+    alert("Inspecting is not allowed on this page.");
+  });
+
+  // Detect common inspection shortcut keys
+  document.addEventListener("keydown", function (e) {
+    // F12
+    if (e.key === "F12") {
+      alert("Developer tools are disabled!");
+      e.preventDefault();
+    }
+
+    // Ctrl+Shift+I
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
+      alert("Inspecting is not allowed!");
+      e.preventDefault();
+    }
+
+    // Ctrl+U (view source)
+    if (e.ctrlKey && e.key.toLowerCase() === "u") {
+      alert("Viewing page source is disabled!");
+      e.preventDefault();
+    }
+
+    // Ctrl+Shift+C (Element Picker)
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") {
+      alert("Element inspection is blocked!");
+      e.preventDefault();
+    }
+
+    // Ctrl+Shift+J (DevTools Console)
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") {
+      alert("Console access is disabled!");
+      e.preventDefault();
+    }
+  });
+</script>
+
 </body>
 
 </html>
