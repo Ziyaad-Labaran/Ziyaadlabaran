@@ -301,7 +301,7 @@
   // Disable right-click
   document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
-    alert("Inspecting is not allowed on this page.");
+    alert("Dont even try 😂.");
   });
 
   // Detect common inspection shortcut keys
@@ -314,25 +314,25 @@
 
     // Ctrl+Shift+I
     if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
-      alert("Inspecting is not allowed!");
+      alert(" Dont even try Inspecting  😂!");
       e.preventDefault();
     }
 
     // Ctrl+U (view source)
     if (e.ctrlKey && e.key.toLowerCase() === "u") {
-      alert("Viewing page source is disabled!");
+      alert("Viewing page source is disabled by Ziyaad!");
       e.preventDefault();
     }
 
     // Ctrl+Shift+C (Element Picker)
     if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") {
-      alert("Element inspection is blocked!");
+      alert("Element inspection is blocked! contact Ziyaad first");
       e.preventDefault();
     }
 
     // Ctrl+Shift+J (DevTools Console)
     if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") {
-      alert("Console access is disabled!");
+      alert("Console access is disabled! 😎");
       e.preventDefault();
     }
   });
