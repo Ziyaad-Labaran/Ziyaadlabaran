@@ -486,39 +486,3 @@ Graphic.addEventListener("click",()=>{
 </section> `
 })
 
-// Not allowing inspect
-
-
-  // Disable right-click
-  document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-    alert("please dont even try 😂.");
-  });
-
-  // Detect F12, Ctrl+Shift+I, Ctrl+U, etc.
-  document.addEventListener("keydown", function (e) {
-    // F12
-    if (e.key === "F12") {
-      alert("Inspecting is not allowed!");
-      e.preventDefault();
-    }
-
-    // Ctrl+Shift+I
-    if (e.ctrlKey && e.shiftKey && e.key === "I") {
-      alert("Inspecting is not allowed!");
-      e.preventDefault();
-    }
-
-    // Ctrl+U (view source)
-    if (e.ctrlKey && e.key === "u") {
-      alert("Viewing source is not allowed! 😁");
-      e.preventDefault();
-    }
-
-    // Ctrl+Shift+C (element picker)
-    if (e.ctrlKey && e.shiftKey && e.key === "C") {
-      alert("Element inspection is not allowed! 👋");
-      e.preventDefault();
-    }
-  });
-
