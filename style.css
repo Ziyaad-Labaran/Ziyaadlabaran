@@ -1138,7 +1138,7 @@
 
    .modern-projects {
   padding: 4rem 2rem;
-  background: #111;
+  background: #11111100;
   color: #f0f0f0;
   text-align: center;
 }
@@ -1157,7 +1157,7 @@
 }
 
 .project-card {
-  background: #1c1c1c;
+  background: #1c1c1c00;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
