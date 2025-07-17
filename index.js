@@ -436,49 +436,112 @@ const Graphic = document.getElementById("graph-de")
 webDev.addEventListener("click",()=>{
     messageDis.style.display = "flex"
     Appear.innerHTML = `
- <div class="services-content" id="service-cont">
-                        <div class="text-section">
-                            <div class="service-info" id="serviceInfo">
-                                <h3 class="service-title" id="serviceTitle">Tourism In Ghana Project</h3>
-                                <p class="service-description" id="serviceDescription">
-                                    A professional tourism website, expertly developed with HTML, CSS, and JavaScript,
-                                    showcasing key Ghanaian destinations and integrated booking features for a seamless
-                                    user experience.
-                                </p>
-                                <ul class="service-features" id="serviceFeatures">
-                                    <li>
-                                        <hr>
-                                    </li>
-                                    <br>
-                                    <div class="pro-icons">
-                                        <div><a href="https://pearson-ziyaad-re.vercel.app/index.html"><i
-                                                    class="fa-solid fa-arrow-up-right-from-square"
-                                                    style="color: #ffffff;"></i></a></div>
-                                        <div><a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re"><i
-                                                    class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <div class="image-section">
-                            <div class="image-container">
-                                <img class="service-image" id="serviceImage"
-                                    src="pearson-ziyaad-re.vercel.app_index.html.png" alt="Web Development">
-                            </div>
-                            <div class="navigation-arrows">
-                                <button class="arrow-btn" id="prevBtn">←</button>
-                                <button class="arrow-btn" id="nextBtn">→</button>
-                            </div>
-                            <div class="service-indicator">
-                                <div class="indicator-dot active" data-index="0"></div>
-                                <div class="indicator-dot" data-index="1"></div>
-                                <div class="indicator-dot" data-index="2"></div>
-                                <div class="indicator-dot" data-index="3"></div>
-                                <!-- <div class="indicator-dot" data-index="4"></div> -->
-                            </div>
-                        </div>
-                    </div>
+
+<section class="modern-projects">
+  <h2 class="projects-heading">🚀 Featured Projects</h2>
+  <div class="projects-grid">
+    
+    <!-- Tourism in Ghana Project -->
+    <div class="project-card">
+      <img src="pearson-ziyaad-re.vercel.app_index.html.png" alt="Tourism Project" />
+      <div class="project-content">
+        <h3>Tourism in Ghana Project</h3>
+        <p>A professional tourism website, expertly developed with HTML, CSS, and JavaScript, showcasing key Ghanaian destinations and integrated booking features for a seamless user experience.</p>
+        <div class="project-links">
+          <a href="https://pearson-ziyaad-re.vercel.app/index.html" target="_blank">Live</a>
+          <a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Climate Change Project -->
+    <div class="project-card">
+      <img src="pearson-climate.vercel.app_.png" alt="Climate Project" />
+      <div class="project-content">
+        <h3>Climate Change Project</h3>
+        <p>Educates and mobilizes youth for climate action, highlighting initiatives like tree planting and cleanup campaigns to foster environmental awareness and engagement.</p>
+        <div class="project-links">
+          <a href="https://pearson-climate.vercel.app/" target="_blank">Live</a>
+          <a href="https://github.com/Ziyaad-Labaran/pearson-climate" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile & Web Apps -->
+    <div class="project-card">
+      <img src="mobile-ziyaad.vercel.app_.png" alt="Agency Project" />
+      <div class="project-content">
+        <h3>Mobile & Web Apps Project</h3>
+        <p>Digital agency portfolio showcasing expertise in custom web and mobile application development for scalable digital solutions.</p>
+        <div class="project-links">
+          <a href="https://mobile-ziyaad.vercel.app/" target="_blank">Live</a>
+          <a href="https://github.com/Ziyaad-Labaran/mobile-ziyaad" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- E-commerce Project -->
+    <div class="project-card">
+      <img src="ecommerce-zii.vercel.app_.png" alt="Ecommerce Project" />
+      <div class="project-content">
+        <h3>E-commerce Project</h3>
+        <p>A fully functional e-commerce platform designed for intuitive navigation and an optimized shopping experience in electronics and home appliances.</p>
+        <div class="project-links">
+          <a href="https://ecommerce-zii.vercel.app/" target="_blank">Live</a>
+          <a href="https://github.com/Ziyaad-Labaran/Ecommerce" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+//  <div class="services-content" id="service-cont">
+//                         <div class="text-section">
+//                             <div class="service-info" id="serviceInfo">
+//                                 <h3 class="service-title" id="serviceTitle">Tourism In Ghana Project</h3>
+//                                 <p class="service-description" id="serviceDescription">
+//                                     A professional tourism website, expertly developed with HTML, CSS, and JavaScript,
+//                                     showcasing key Ghanaian destinations and integrated booking features for a seamless
+//                                     user experience.
+//                                 </p>
+//                                 <ul class="service-features" id="serviceFeatures">
+//                                     <li>
+//                                         <hr>
+//                                     </li>
+//                                     <br>
+//                                     <div class="pro-icons">
+//                                         <div><a href="https://pearson-ziyaad-re.vercel.app/index.html"><i
+//                                                     class="fa-solid fa-arrow-up-right-from-square"
+//                                                     style="color: #ffffff;"></i></a></div>
+//                                         <div><a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re"><i
+//                                                     class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+//                                     </div>
+//                                 </ul>
+//                             </div>
+//                         </div>
+
+//                         <div class="image-section">
+//                             <div class="image-container">
+//                                 <img class="service-image" id="serviceImage"
+//                                     src="pearson-ziyaad-re.vercel.app_index.html.png" alt="Web Development">
+//                             </div>
+//                             <div class="navigation-arrows">
+//                                 <button class="arrow-btn" id="prevBtn">←</button>
+//                                 <button class="arrow-btn" id="nextBtn">→</button>
+//                             </div>
+//                             <div class="service-indicator">
+//                                 <div class="indicator-dot active" data-index="0"></div>
+//                                 <div class="indicator-dot" data-index="1"></div>
+//                                 <div class="indicator-dot" data-index="2"></div>
+//                                 <div class="indicator-dot" data-index="3"></div>
+//                                 <!-- <div class="indicator-dot" data-index="4"></div> -->
+//                             </div>
+//                         </div>
+//                     </div>
     `
 })
 
