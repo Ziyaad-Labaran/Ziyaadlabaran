@@ -439,7 +439,6 @@ webDev.addEventListener("click",()=>{
 
 
 <section class="modern-projects">
-  <h2 class="projects-heading">🚀 Featured Projects</h2>
   <div class="projects-grid">
     
     <!-- Tourism in Ghana Project -->
