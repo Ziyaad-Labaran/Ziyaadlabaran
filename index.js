@@ -115,6 +115,20 @@ const services = [
         ],
         image: "ecommerce-zii.vercel.app_.png"
     },
+     {
+        title: "Architectual Portfolio",
+        description: " I designed this architectual portfolio website to discribe the profession of a client",
+        features: [
+            "<hr>",
+            ` <div class="pro-icons">
+                                        <div> <a href="https://karim-zaidan.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
+                                                style="color: #ffffff;"></i></a></div>
+                                        <div><a href="https://github.com/Ziyaad-Labaran/Zaidan-s_portfolio"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                                    </div> `
+
+        ],
+        image: "karim-zaidan.vercel.app_ (1) (1).png"
+    },
 ];
 
 let currentIndex = 0;
