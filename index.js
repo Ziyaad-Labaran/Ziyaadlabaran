@@ -1,3 +1,6 @@
+// Wait for DOM to load
+
+// ------------------- COUNTER -------------------
 document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.number');
     const speed = 7000;
@@ -18,11 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCount();
     };
 
-    const observerOptions = {
-        root: null,
-        threshold: 0.1
-    };
+    if (!('IntersectionObserver' in window)) {
+        counters.forEach(counter => {
+            if (counter.getAttribute('data-target')) {
+                animateCounter(counter);
+            }
+        });
+        return;
+    }
 
+    const observerOptions = { root: null, threshold: 0.1 };
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -36,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const intersectionObserver = new IntersectionObserver(observerCallback, observerOptions);
-
     const counterItems = document.querySelectorAll('.counter-item');
+
     if (counterItems.length > 0) {
         counterItems.forEach(item => intersectionObserver.observe(item));
     } else {
@@ -47,71 +55,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    if (!('IntersectionObserver' in window)) {
-        counters.forEach(counter => {
-            if (counter.getAttribute('data-target')) {
-                animateCounter(counter);
-            }
-        });
-    }
 });
 
 
-
+// ------------------- PROJECT SLIDER -------------------
 const services = [
     {
         title: "Tourism in Ghana Project",
         description: "A professional tourism website, expertly developed with HTML, CSS, and JavaScript, showcasing key Ghanaian destinations and integrated booking features for a seamless user experience.",
         features: [
             "<hr>",
-            ` <div class="pro-icons">
-                                        <div> <a href="https://pearson-ziyaad-re.vercel.app/index.html"<i class="fa-solid fa-arrow-up-right-from-square"
-                                                style="color: #ffffff;"></i></a></div>
-                                        <div><a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re"<i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
-                                    </div> `
-
+            `<div class="pro-icons">
+                <div><a href="https://pearson-ziyaad-re.vercel.app/index.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a></div>
+                <div><a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+            </div>`
         ],
         image: "pearson-ziyaad-re.vercel.app_index.html.png"
     },
     {
-
-        title: "Climate change project",
+        title: "Climate Change Project",
         description: "A focused website that educates and mobilizes youth for climate action, highlighting initiatives like tree planting and cleanup campaigns to foster environmental awareness and engagement.",
         features: [
             "<hr>",
-            ` <div class="pro-icons">
-                                        <div> <a href="https://pearson-climate.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
-                                                style="color: #ffffff;"></i></a></div>
-                                        <div><a href="https://github.com/Ziyaad-Labaran/pearson-climate"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
-                                    </div> `
+            `<div class="pro-icons">
+                <div><a href="https://pearson-climate.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a></div>
+                <div><a href="https://github.com/Ziyaad-Labaran/pearson-climate"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+            </div>`
         ],
         image: "pearson-climate.vercel.app_.png"
     },
     {
-        title: "Mobile apps and Web apps project",
+        title: "Mobile Apps and Web Apps Project",
         description: "This professionally developed website serves as a digital agency's portfolio, showcasing expertise in custom web and mobile application development with a focus on delivering scalable digital solutions for businesses.",
         features: [
             "<hr>",
-            ` <div class="pro-icons">
-                                        <div> <a href="https://mobile-ziyaad.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
-                                                style="color: #ffffff;"></i></a></div>
-                                        <div><a href="https://github.com/Ziyaad-Labaran/mobile-ziyaad"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
-                                    </div> `
+            `<div class="pro-icons">
+                <div><a href="https://mobile-ziyaad.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a></div>
+                <div><a href="https://github.com/Ziyaad-Labaran/mobile-ziyaad"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+            </div>`
         ],
         image: "mobile-ziyaad.vercel.app_.png"
     },
     {
-        title: "E-commerce project",
-        description: " This is  fully functional e-commerce platform designed for intuitive navigation and an optimized shopping experience in electronics and home appliances.",
+        title: "E-commerce Project",
+        description: "This is a fully functional e-commerce platform designed for intuitive navigation and an optimized shopping experience in electronics and home appliances.",
         features: [
             "<hr>",
-            ` <div class="pro-icons">
-                                        <div> <a href="https://ecommerce-zii.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
-                                                style="color: #ffffff;"></i></a></div>
-                                        <div><a href="https://github.com/Ziyaad-Labaran/Ecommerce"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
-                                    </div> `
-
+            `<div class="pro-icons">
+                <div><a href="https://ecommerce-zii.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a></div>
+                <div><a href="https://github.com/Ziyaad-Labaran/Ecommerce"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+            </div>`
         ],
         image: "ecommerce-zii.vercel.app_.png"
     }
@@ -119,7 +112,6 @@ const services = [
 
 let currentIndex = 0;
 let isAnimating = false;
-
 const serviceTitle = document.getElementById('serviceTitle');
 const serviceDescription = document.getElementById('serviceDescription');
 const serviceFeatures = document.getElementById('serviceFeatures');
@@ -132,42 +124,26 @@ const indicators = document.querySelectorAll('.indicator-dot');
 function updateService(newIndex, direction = 'right') {
     if (isAnimating) return;
     isAnimating = true;
-
-
     serviceInfo.classList.add('fade-out');
 
-    if (direction === 'right') {
-        serviceImage.classList.add('slide-out-right');
-    } else {
-        serviceImage.classList.add('slide-out-left');
-    }
+    serviceImage.classList.add(direction === 'right' ? 'slide-out-right' : 'slide-out-left');
 
     setTimeout(() => {
-
         currentIndex = newIndex;
         const service = services[currentIndex];
 
         serviceTitle.textContent = service.title;
         serviceDescription.textContent = service.description;
-
-        serviceFeatures.innerHTML = service.features
-            .map(feature => `<li>${feature}</li>`)
-            .join('');
-
+        serviceFeatures.innerHTML = service.features.map(feature => `<li>${feature}</li>`).join('');
         serviceImage.src = service.image;
         serviceImage.alt = service.title;
 
-        indicators.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
-        });
-
+        indicators.forEach((dot, index) => dot.classList.toggle('active', index === currentIndex));
 
         serviceInfo.classList.remove('fade-out');
         serviceImage.classList.remove('slide-out-right', 'slide-out-left');
 
-        setTimeout(() => {
-            isAnimating = false;
-        }, 100);
+        setTimeout(() => isAnimating = false, 400);
     }, 400);
 }
 
@@ -195,153 +171,16 @@ indicators.forEach((dot, index) => {
 
 setInterval(nextService, 7000);
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') nextService();
-    if (e.key === 'ArrowLeft') prevService();
-});
-
-
-const skills = document.querySelectorAll('.skills-container div');
-
-const skillsObserverCallback = (entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            entry.target.style.opacity = 1; // Ensure it's visible
-            entry.target.style.transform = 'translateY(0)'; // Reset transform
-        }
-    });
-};
-
-const skillsObserver = new IntersectionObserver(skillsObserverCallback, {
-    threshold: 0.1
-});
-
-skills.forEach(skill => {
-    skillsObserver.observe(skill);
-});
-
-
-
-const buttons = {
-    'experiences-btn': {
-        title: 'My Experiences',
-        content: `
-        <h2>My <span>Experiences</span></h2>
-        <br>
-        <br>
-        <p>Passionate Junior Web Developer diligently building a strong foundation in HTML5, CSS3, and JavaScript
-                fundamentals. Driven by curiosity and a commitment to continuous learning, I am actively honing my
-                skills through hands-on projects, transforming ideas into functional and aesthetically pleasing web
-                experiences. Eager to contribute and grow within a dynamic development environment.</p>
-        `
-    },
-    'skills-btn': {
-        title: 'My Skills',
-        content: `
-         <h1>My <span>Skills</span></h1>
-                <br>
-                <p>I have strong skills in a variety of technologies and tools including:</p>
-                <div class="skills-container">
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/732/732212.png" alt="HTML5">
-                    </div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS3">
-                    </div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
-                            alt="JavaScript"></div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma">
-                    </div>
-                    <div class="skill"><img src="adobe-xd-icon-1024x1024-njjmrpui.png"
-                            alt="Adobe Xd"></div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React">
-                    </div>
-                    <div class="skill"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png"
-                            alt="Photoshop"></div>
-                             <div class="skill"><img src="adobe-illustrator-icon-free-png.png"
-                            alt="illustrator"></div>
-                               <div class="skill"><img src="1691829322canva-app-logo-png.png"
-                            alt="canva"></div>
-                            <div class="skill"><img src="174881.png"
-                            alt="canva"></div>
- <div class="skill"><img src="GSAP-Logo.png"
-                            alt="Gsap logo" width="100%" style="scale:3;"></div>
-                            
-                </div> 
-            </div>`
-    },
-    'education-btn': {
-        title: 'My Education',
-        content: `
-        <h2>My <span>Education</span></h2>
-        <br>
-        <p>I hold the following academic qualifications:</p>
-        <br>
-        <ul>
-          <li>West African Senior School Certificate (2021-2024)</li>
-          <li>Pearson BTEC Level 2 Certificate in Creative Media Skills (2024 - 2025)</li>
-        </ul>`
-    },
-};
-
-const leftPanel = document.querySelector('.left-panel');
-const contentPanel = document.getElementById('content-panel');
-
-function updateContent(buttonId) {
-
-    contentPanel.innerHTML = buttons[buttonId].content;
-
-
-    contentPanel.setAttribute('aria-labelledby', buttonId);
-}
-
-function clearActive() {
-    const btns = leftPanel.querySelectorAll('button');
-    btns.forEach(btn => {
-        btn.classList.remove('active');
-        btn.setAttribute('aria-selected', 'false');
-        btn.setAttribute('tabindex', '-1');
-    });
-}
-
-leftPanel.addEventListener('click', (event) => {
-    if (event.target.tagName === 'BUTTON') {
-        clearActive();
-        event.target.classList.add('active');
-        event.target.setAttribute('aria-selected', 'true');
-        event.target.setAttribute('tabindex', '0');
-        updateContent(event.target.id);
-        event.target.focus();
-    }
-});
-
-leftPanel.addEventListener('keydown', (event) => {
-    const btns = Array.from(leftPanel.querySelectorAll('button'));
-    const currentIndex = btns.findIndex(btn => btn.classList.contains('active'));
-    if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
-        event.preventDefault();
-        const nextIndex = (currentIndex + 1) % btns.length;
-        btns[nextIndex].click();
-        btns[nextIndex].focus();
-    } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
-        event.preventDefault();
-        const prevIndex = (currentIndex - 1 + btns.length) % btns.length;
-        btns[prevIndex].click();
-        btns[prevIndex].focus();
-    }
-});
-
+// ------------------- TYPED TEXT -------------------
 const texts = ["Frontend Developer", "Graphic Designer", "UI/UX Designer"];
-let count = 0;
-let index = 0;
-let currentText = '';
-let letter = '';
-
+let count = 0, index = 0, currentText = '', letter = '';
 (function type() {
     if (count === texts.length) count = 0;
     currentText = texts[count];
     letter = currentText.slice(0, ++index);
 
-    document.getElementById('typed-text').textContent = letter;
+    const typedText = document.getElementById('typed-text');
+    if (typedText) typedText.textContent = letter;
 
     if (letter.length === currentText.length) {
         setTimeout(() => {
@@ -354,135 +193,26 @@ let letter = '';
     }
 })();
 
+// ------------------- MOBILE NAV -------------------
 const Menu = document.getElementById('hamburger');
 const mobile = document.querySelector('nav');
-
-Menu.addEventListener("click", () => {
-    mobile.style.left = "0"
-});
-
 const cloSe = document.getElementById('close');
-const humburger = document.querySelector('nav');
-cloSe.addEventListener("click", () => {
-    mobile.style.left = "-100%"
-});
 const nav = document.getElementById('nav');
-const black = document.getElementById('nav');
-nav.addEventListener("click", () => {
-    black.style.left = "-100%"
-});
 
+Menu.addEventListener("click", () => mobile.style.left = "0");
+cloSe.addEventListener("click", () => mobile.style.left = "-100%");
+nav.addEventListener("click", () => nav.style.left = "-100%");
 
- const  messageDis = document.getElementById("service-cont")
- const Clickbut = document.getElementById("ux-de")
-const Appear = document.getElementById("service-main")
-const webDev = document.getElementById("web")
-const Graphic = document.getElementById("graph-de")
-
- Clickbut.addEventListener("click",()=>{
-    messageDis.style.display = "none";
-    Appear.innerHTML = `
-    <section class="portfolio-section">
-  <div class="portfolio-card">
-    <img src="Screenshot (38).png" alt="UI/UX Design 1" class="portfolio-image" />
-    <div class="portfolio-content">
-      
-      <a href="https://www.figma.com/proto/FlMeQlZzC83lwWvNkEQUVW/Food-app?node-id=83-44&starting-point-node-id=1%3A2&t=Jv8VqJJyPEogejnP-1" class="btn">View Project</a>
-    </div>
-  </div>
-  <div class="portfolio-card">
-    <img src="Screenshot (42).png" alt="UI/UX Design 2" class="portfolio-image" />
-    <div class="portfolio-content">
-      
-      <a href="https://www.figma.com/proto/GscyDiKXx8TuZJ3Kixy2mM/Ziyaad-mobile?node-id=172-2&starting-point-node-id=172%3A2&t=ETFeHcyERmXaMq3l-1" class="btn">View Project</a>
-    </div>
-  </div>
-   <div class="portfolio-card">
-    <img src="Screenshot (40).png" alt="UI/UX Design 3" class="portfolio-image" />
-    <div class="portfolio-content">
-     
-      <a href="https://www.figma.com/proto/vF0VYuuE9OJ0IKu2Eg9eAV/Library-website?node-id=1-2&starting-point-node-id=1%3A2&t=EHOJ6wCMAsl4ZY7K-1"  class="btn">View Project</a>
-    </div>
-  </div>
-   <div class="portfolio-card">
-    <img src="Screenshot (37).png" alt="UI/UX Design 4" class="portfolio-image" />
-    <div class="portfolio-content">
-    
-      <a href="https://www.figma.com/proto/kva0wFBsdwhNAy9MwcStIQ/Tiktok-app?node-id=1-2&starting-point-node-id=44%3A18&t=52S7WkpyFiYpmSZ8-1"  class="btn">View Project</a>
-    </div>
-  </div>
-  
-</section>
-
-
-    `;
-
-})
-
-webDev.addEventListener("click",()=>{
-    messageDis.style.display = "flex"
-    Appear.innerHTML = `
- <div class="services-content" id="service-cont">
-                        <div class="text-section">
-                            <div class="service-info" id="serviceInfo">
-                                <h3 class="service-title" id="serviceTitle">Tourism In Ghana Project</h3>
-                                <p class="service-description" id="serviceDescription">
-                                    A professional tourism website, expertly developed with HTML, CSS, and JavaScript,
-                                    showcasing key Ghanaian destinations and integrated booking features for a seamless
-                                    user experience.
-                                </p>
-                                <ul class="service-features" id="serviceFeatures">
-                                    <li>
-                                        <hr>
-                                    </li>
-                                    <br>
-                                    <div class="pro-icons">
-                                        <div><a href="https://pearson-ziyaad-re.vercel.app/index.html"><i
-                                                    class="fa-solid fa-arrow-up-right-from-square"
-                                                    style="color: #ffffff;"></i></a></div>
-                                        <div><a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re"><i
-                                                    class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="image-section">
-                            <div class="image-container">
-                                <img class="service-image" id="serviceImage"
-                                    src="pearson-ziyaad-re.vercel.app_index.html.png" alt="Web Development">
-                            </div>
-                            <div class="navigation-arrows">
-                                <button class="arrow-btn" id="prevBtn">←</button>
-                                <button class="arrow-btn" id="nextBtn">→</button>
-                            </div>
-                            <div class="service-indicator">
-                                <div class="indicator-dot active" data-index="0"></div>
-                                <div class="indicator-dot" data-index="1"></div>
-                                <div class="indicator-dot" data-index="2"></div>
-                                <div class="indicator-dot" data-index="3"></div>
-                                <!-- <div class="indicator-dot" data-index="4"></div> -->
-                            </div>
-                        </div>
-                    </div>
-    `
-})
-
-Graphic.addEventListener("click",()=>{
-     messageDis.style.display = "flex"
-    Appear.innerHTML = `
-     <section class="portfolio-section">
-   <div class="portfolio-card">
-    <img src="Ziyaads work (2).jpg" alt="Project thumbnail" class="portfolio-image" />
-    
-  </div>
-   <div class="portfolio-card">
-    <img src="Kingzii.jpg" alt="Project thumbnail" class="portfolio-image" />
-  </div>
-  
-   <div class="portfolio-card">
-    <img src="Ziyaad estate2.jpg" alt="Ziyaad graphic design 1" class="portfolio-image" />
-  </div>
-</section> `
-})
-
+// ------------------- SKILLS OBSERVER -------------------
+const skills = document.querySelectorAll('.skills-container div');
+const skillsObserverCallback = (entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+};
+const skillsObserver = new IntersectionObserver(skillsObserverCallback, { threshold: 0.1 });
+skills.forEach(skill => skillsObserver.observe(skill));
