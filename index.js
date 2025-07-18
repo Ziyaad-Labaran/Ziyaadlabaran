@@ -352,54 +352,6 @@ leftPanel.addEventListener('keydown', (event) => {
     }
 });
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const texts = ["Frontend Developer", "Graphic Designer", "UI/UX Designer"];
-    let count = 0;
-    let index = 0;
-    let currentText = '';
-    let letter = '';
-    const typedTextElement = document.getElementById('typed-text');
-
-    function type() {
-        if (!typedTextElement) return;
-
-        if (count === texts.length) {
-            count = 0;
-        }
-
-        currentText = texts[count];
-        letter = currentText.slice(0, ++index);
-
-        typedTextElement.textContent = letter;
-
-        if (letter.length === currentText.length) {
-            // Pause before deleting
-            setTimeout(() => erase(), 2000);
-        } else {
-            setTimeout(type, 100);
-        }
-    }
-
-    function erase() {
-        if (!typedTextElement) return;
-
-        letter = currentText.slice(0, --index);
-        typedTextElement.textContent = letter;
-
-        if (letter.length === 0) {
-            count++;
-            setTimeout(type, 200);
-        } else {
-            setTimeout(erase, 50);
-        }
-    }
-
-    // Start the animation
-    type();
-});
-
-
  const  messageDis = document.getElementById("service-cont")
  const Clickbut = document.getElementById("ux-de")
 const Appear = document.getElementById("service-main")
