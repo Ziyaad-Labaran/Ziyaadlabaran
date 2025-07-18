@@ -1353,7 +1353,7 @@
   .progress{
     padding: 8px 20px;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 13px;
     border: none;
     background-color: var(--primary-color);
   }
