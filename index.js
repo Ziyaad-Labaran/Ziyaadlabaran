@@ -392,29 +392,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-
-
-const Menu = document.getElementById('hamburger');
-const mobile = document.querySelector('nav');
-
-Menu.addEventListener("click", () => {
-    mobile.style.left = "0"
-});
-
-const cloSe = document.getElementById('close');
-const humburger = document.querySelector('nav');
-cloSe.addEventListener("click", () => {
-    mobile.style.left = "-100%"
-});
-const nav = document.getElementById('nav');
-const black = document.getElementById('nav');
-nav.addEventListener("click", () => {
-    black.style.left = "-100%"
-});
-
-
  const  messageDis = document.getElementById("service-cont")
  const Clickbut = document.getElementById("ux-de")
 const Appear = document.getElementById("service-main")
@@ -544,3 +521,35 @@ Graphic.addEventListener("click",()=>{
 </section> `
 })
 
+
+
+
+
+
+
+// Mobile Navigation (Hamburger Menu)
+const hamburgerMenu = document.getElementById('hamburger');
+const mobileNav = document.querySelector('nav');
+const closeBtn = document.getElementById('close'); // Assuming you have a close button inside the nav
+
+// Open menu
+hamburgerMenu.addEventListener('click', () => {
+    mobileNav.classList.add('active'); // Add active class to nav for sliding in
+    hamburgerMenu.classList.add('active'); // Add active class to hamburger for its animation (e.g., X icon)
+});
+
+// Close menu via close button or clicking a nav link
+closeBtn.addEventListener('click', () => {
+    mobileNav.classList.remove('active'); // Remove active class to slide out nav
+    hamburgerMenu.classList.remove('active'); // Remove active class from hamburger
+});
+
+// This listener is useful if clicking anywhere within the open nav should close it
+mobileNav.addEventListener('click', (event) => {
+    // Only close if a link or non-interactive area within the nav is clicked
+    // This prevents closing if, for example, a click listener for a sub-menu exists within nav
+    if (event.target.tagName === 'A' || event.target === mobileNav) {
+        mobileNav.classList.remove('active');
+        hamburgerMenu.classList.remove('active');
+    }
+});
