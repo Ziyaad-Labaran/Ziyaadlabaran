@@ -297,6 +297,14 @@ const buttons = {
     },
 };
 
+
+
+
+
+
+
+
+
 const leftPanel = document.querySelector('.left-panel');
 const contentPanel = document.getElementById('content-panel');
 
@@ -523,10 +531,6 @@ Graphic.addEventListener("click",()=>{
 
 
 
-
-
-
-
 // Mobile Navigation (Hamburger Menu)
 const hamburgerMenu = document.getElementById('hamburger');
 const mobileNav = document.querySelector('nav');
@@ -553,3 +557,49 @@ mobileNav.addEventListener('click', (event) => {
         hamburgerMenu.classList.remove('active');
     }
 });
+
+
+
+
+
+
+  const phrases = ["Front-End Developer", "UI/UX Designer", "Graphic Designer"];
+  const animatedTextElement = document.getElementById("animated-text");
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 150; // Speed of typing (milliseconds)
+  let deletingSpeed = 75; // Speed of deleting (milliseconds)
+  let delayBetweenPhrases = 1000; // Delay before typing the next phrase (milliseconds)
+
+  function type() {
+    const currentPhrase = phrases[phraseIndex];
+    if (isDeleting) {
+      // Deleting text
+      animatedTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      // Typing text
+      animatedTextElement.textContent = currentPhrase.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+      // If done typing, start deleting after a delay
+      isDeleting = true;
+      setTimeout(type, delayBetweenPhrases);
+    } else if (isDeleting && charIndex === 0) {
+      // If done deleting, move to the next phrase
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(type, typingSpeed);
+    } else {
+      // Continue typing or deleting
+      setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Start the typing animation when the DOM is fully loaded
+    type();
+  });

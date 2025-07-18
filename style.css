@@ -1334,3 +1334,18 @@
                 font-size: 0.9rem;
             }
         }
+
+  #typing-animation {
+    font-family: monospace; /* A monospaced font often looks good for typing */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 0.15em solid orange; /* The blinking cursor */
+    animation: blink-caret 0.75s step-end infinite; /* Cursor blinking animation */
+    width: 0; /* Start with no width to hide the text initially */
+  }
+
+  /* Keyframe animation for the blinking cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
