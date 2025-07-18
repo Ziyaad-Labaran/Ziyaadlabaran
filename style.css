@@ -319,9 +319,6 @@
        text-align: center;
    }
 
-   /* .box:hover{
-    translate(X):30px ;
-   } */
 
    .box img {
        display: block;
@@ -1352,4 +1349,10 @@
 
   .my-type{
     color: var(--primary-color);
+  }
+  .progress{
+    padding: 8px 20px;
+    
+    border: none;
+    background-color: var(--primary-color);
   }
