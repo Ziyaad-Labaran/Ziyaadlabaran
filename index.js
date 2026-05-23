@@ -196,115 +196,173 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- Service Display/Filtering Logic (Existing Code) ---
-    const messageDis = document.getElementById("service-cont");
-    const Clickbut = document.getElementById("ux-de");
-    const Appear = document.getElementById("service-main");
-    const webDev = document.getElementById("web");
-    const Graphic = document.getElementById("graph-de");
+    // --- FILTER BUTTONS FOR MY WORKS SECTION ---
+const webDevBtn = document.getElementById("web");
+const uiuxBtn = document.getElementById("ux-de");
+const graphicBtn = document.getElementById("graph-de");
+const portfolioContainer = document.querySelector('.portfolio-container');
 
-    if (Clickbut && Appear && webDev && Graphic && messageDis) {
-        Clickbut.addEventListener("click", () => {
-            messageDis.style.display = "none";
-            Appear.innerHTML = `
-            <section class="portfolio-section">
-                <div class="portfolio-card">
-                    <img src="Screenshot (38).png" alt="UI/UX Design 1" class="portfolio-image" />
-                    <div class="portfolio-content">
-                        <a href="https://www.figma.com/proto/FlMeQlZzC83lwWvNkEQUVW/Food-app?node-id=83-44&starting-point-node-id=1%3A2&t=Jv8VqJJyPEogejnP-1" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="Screenshot (42).png" alt="UI/UX Design 2" class="portfolio-image" />
-                    <div class="portfolio-content">
-                        <a href="https://www.figma.com/proto/GscyDiKXx8TuZJ3Kixy2mM/Ziyaad-mobile?node-id=172-2&starting-point-node-id=172%3A2&t=ETFeHcyERmXaMq3l-1" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="Screenshot (40).png" alt="UI/UX Design 3" class="portfolio-image" />
-                    <div class="portfolio-content">
-                        <a href="https://www.figma.com/proto/vF0VYuuE9OJ0IKu2Eg9eAV/Library-website?node-id=1-2&starting-point-node-id=1%3A2&t=EHOJ6wCMAsl4ZY7K-1" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="Screenshot (37).png" alt="UI/UX Design 4" class="portfolio-image" />
-                    <div class="portfolio-content">
-                        <a href="https://www.figma.com/proto/kva0wFBsdwhNAy9MwcStIQ/Tiktok-app?node-id=1-2&starting-point-node-id=44%3A18&t=52S7WkpyFiYpmSZ8-1" class="btn">View Project</a>
-                    </div>
-                </div>
-            </section>
-            `;
-        });
+// Define the content for each category (using YOUR existing HTML)
+const webContent = `
+    <!-- Climate Change Project -->
+    <div class="work-item" data-aos="fade-up">
+        <img src="pearson-climate.vercel.app_.png" alt="Climate Project" />
+        <div class="work-description">
+            <h3>Climate Change Project</h3>
+            <p>Educates and mobilizes youth for climate action, highlighting initiatives like tree planting and cleanup campaigns to foster environmental awareness and engagement.</p>
+            <div class="work-actions">
+                <a href="https://pearson-climate.vercel.app/" target="_blank">Live <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Ziyaad-Labaran/pearson-climate" target="_blank">Code <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
 
-        webDev.addEventListener("click", () => {
-            messageDis.style.display = "flex";
-            Appear.innerHTML = `
-            <section class="modern-projects">
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="pearson-ziyaad-re.vercel.app_index.html.png" alt="Tourism Project" />
-                        <div class="project-content">
-                            <h3>Tourism in Ghana Project</h3>
-                            <p>A professional tourism website, expertly developed with HTML, CSS, and JavaScript, showcasing key Ghanaian destinations and integrated booking features for a seamless user experience.</p>
-                            <div class="project-links">
-                                <a href="https://pearson-ziyaad-re.vercel.app/index.html" target="_blank">Live</a>
-                                <a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="pearson-climate.vercel.app_.png" alt="Climate Project" />
-                        <div class="project-content">
-                            <h3>Climate Change Project</h3>
-                            <p>Educates and mobilizes youth for climate action, highlighting initiatives like tree planting and cleanup campaigns to foster environmental awareness and engagement.</p>
-                            <div class="project-links">
-                                <a href="https://pearson-climate.vercel.app/" target="_blank">Live</a>
-                                <a href="https://github.com/Ziyaad-Labaran/pearson-climate" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="mobile-ziyaad.vercel.app_.png" alt="Agency Project" />
-                        <div class="project-content">
-                            <h3>Mobile & Web Apps Project</h3>
-                            <p>Digital agency portfolio showcasing expertise in custom web and mobile application development for scalable digital solutions.</p>
-                            <div class="project-links">
-                                <a href="https://mobile-ziyaad.vercel.app/" target="_blank">Live</a>
-                                <a href="https://github.com/Ziyaad-Labaran/mobile-ziyaad" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="ecommerce-zii.vercel.app_.png" alt="Ecommerce Project" />
-                        <div class="project-content">
-                            <h3>E-commerce Project</h3>
-                            <p>A fully functional e-commerce platform designed for intuitive navigation and an optimized shopping experience in electronics and home appliances.</p>
-                            <div class="project-links">
-                                <a href="https://ecommerce-zii.vercel.app/" target="_blank">Live</a>
-                                <a href="https://github.com/Ziyaad-Labaran/Ecommerce" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            `;
-        });
+    <div class="work-item" data-aos="fade-up">
+        <img src="gta-6-landing-page-lemon.vercel.app_ (1).png" alt="Ziyaad Labaran GTA Landing Page" />
+        <div class="work-description">
+            <h3>GTA Landing Page</h3>
+            <p>This project is a responsive remake of the official GTA landing page, built using React and Tailwind CSS. It showcases a clean, component-based architecture with smooth transitions and a layout that mirrors the original design.</p>
+            <div class="work-actions">
+                <a href="https://gta-zii.vercel.app/" target="_blank">Live <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Ziyaad-Labaran/GTA_Landing_Page" target="_blank">Code <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
 
-        Graphic.addEventListener("click", () => {
-            messageDis.style.display = "flex";
-            Appear.innerHTML = `
-            <section class="portfolio-section">
-                <div class="portfolio-card">
-                    <img src="Ziyaads work (2).jpg" alt="Project thumbnail" class="portfolio-image" />
-                </div>
-                <div class="portfolio-card">
-                    <img src="Kingzii.jpg" alt="Project thumbnail" class="portfolio-image" />
-                </div>
-                <div class="portfolio-card">
-                    <img src="Ziyaad estate2.jpg" alt="Ziyaad graphic design 1" class="portfolio-image" />
-                </div>
-            </section> `;
-        });
+    <div class="work-item" data-aos="fade-up">
+        <img src="mobile-ziyaad.vercel.app_.png" alt="Agency Project" />
+        <div class="work-description">
+            <h3>Mobile & Web Apps Project</h3>
+            <p>Digital agency portfolio showcasing expertise in custom web and mobile application development for scalable digital solutions.</p>
+            <div class="work-actions">
+                <a href="https://mobile-ziyaad.vercel.app/" target="_blank">Live <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Ziyaad-Labaran/mobile-ziyaad" target="_blank">Code <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-item" data-aos="fade-up">
+        <img src="karim-zaidan.vercel.app_ (1) (1).png" alt="Climate Project" />
+        <div class="work-description">
+            <h3>Architectural Portfolio</h3>
+            <p>This is a fully responsive portfolio website I built for an architect using HTML, CSS, and JavaScript. It was designed to professionally showcase architectural projects with a clean layout, image-focused sections, and intuitive navigation</p>
+            <div class="work-actions">
+                <a href="https://karim-zaidan.vercel.app/" target="_blank">Live <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Ziyaad-Labaran/Zaidan-s_portfolio" target="_blank">Code <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-item" data-aos="fade-up">
+        <img src="pearson-ziyaad-re.vercel.app_index.html.png" alt="Tourism Project" />
+        <div class="work-description">
+            <h3>Tourism in Ghana Project</h3>
+            <p>A professional tourism website, expertly developed with HTML, CSS, and JavaScript, showcasing key Ghanaian destinations and integrated booking features for a seamless user experience.</p>
+            <div class="work-actions">
+                <a href="https://pearson-ziyaad-re.vercel.app/index.html" target="_blank">Live <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Ziyaad-Labaran/pearson-ziyaad-re" target="_blank">Code <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-item" data-aos="fade-up">
+        <img src="ecommerce-zii.vercel.app_.png" alt="Ecommerce Project" />
+        <div class="work-description">
+            <h3>E-commerce Project <button class="progress">On progress</button></h3>
+            <p>A fully functional e-commerce platform designed for intuitive navigation and an optimized shopping experience in electronics and home appliances.</p>
+            <div class="work-actions">
+                <a href="https://ecommerce-zii.vercel.app/" target="_blank">Live <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Ziyaad-Labaran/Ecommerce" target="_blank">Code <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
+`;
+
+const uiuxContent = `
+    <div class="portfolio-card">
+        <img src="Screenshot (38).png" alt="UI/UX Design 1" class="portfolio-image" />
+        <div class="portfolio-content">
+            <a href="https://www.figma.com/proto/FlMeQlZzC83lwWvNkEQUVW/Food-app?node-id=83-44&starting-point-node-id=1%3A2&t=Jv8VqJJyPEogejnP-1" class="btn">View Project</a>
+        </div>
+    </div>
+    <div class="portfolio-card">
+        <img src="Screenshot (42).png" alt="UI/UX Design 2" class="portfolio-image" />
+        <div class="portfolio-content">
+            <a href="https://www.figma.com/proto/GscyDiKXx8TuZJ3Kixy2mM/Ziyaad-mobile?node-id=172-2&starting-point-node-id=172%3A2&t=ETFeHcyERmXaMq3l-1" class="btn">View Project</a>
+        </div>
+    </div>
+    <div class="portfolio-card">
+        <img src="Screenshot (40).png" alt="UI/UX Design 3" class="portfolio-image" />
+        <div class="portfolio-content">
+            <a href="https://www.figma.com/proto/vF0VYuuE9OJ0IKu2Eg9eAV/Library-website?node-id=1-2&starting-point-node-id=1%3A2&t=EHOJ6wCMAsl4ZY7K-1" class="btn">View Project</a>
+        </div>
+    </div>
+    <div class="portfolio-card">
+        <img src="Screenshot (37).png" alt="UI/UX Design 4" class="portfolio-image" />
+        <div class="portfolio-content">
+            <a href="https://www.figma.com/proto/kva0wFBsdwhNAy9MwcStIQ/Tiktok-app?node-id=1-2&starting-point-node-id=44%3A18&t=52S7WkpyFiYpmSZ8-1" class="btn">View Project</a>
+        </div>
+    </div>
+`;
+
+const graphicContent = `
+    <div class="portfolio-card">
+        <img src="Ziyaads work (2).jpg" alt="Project thumbnail" class="portfolio-image" />
+    </div>
+    <div class="portfolio-card">
+        <img src="Kingzii.jpg" alt="Project thumbnail" class="portfolio-image" />
+    </div>
+    <div class="portfolio-card">
+        <img src="Ziyaad estate2.jpg" alt="Ziyaad graphic design 1" class="portfolio-image" />
+    </div>
+`;
+
+// Function to switch content
+function showCategory(category) {
+    if (!portfolioContainer) return;
+    
+    if (category === 'web') {
+        portfolioContainer.innerHTML = webContent;
+        // Re-trigger AOS for new elements
+        if (typeof AOS !== 'undefined') {
+            AOS.refresh();
+        }
+    } else if (category === 'uiux') {
+        portfolioContainer.innerHTML = uiuxContent;
+    } else if (category === 'graphic') {
+        portfolioContainer.innerHTML = graphicContent;
     }
+}
+
+// Add click event listeners
+if (webDevBtn) {
+    webDevBtn.addEventListener("click", () => {
+        showCategory('web');
+        // Update active button styling
+        document.querySelectorAll('.work-choose').forEach(btn => btn.classList.remove('active-filter'));
+        webDevBtn.classList.add('active-filter');
+    });
+}
+
+if (uiuxBtn) {
+    uiuxBtn.addEventListener("click", () => {
+        showCategory('uiux');
+        document.querySelectorAll('.work-choose').forEach(btn => btn.classList.remove('active-filter'));
+        uiuxBtn.classList.add('active-filter');
+    });
+}
+
+if (graphicBtn) {
+    graphicBtn.addEventListener("click", () => {
+        showCategory('graphic');
+        document.querySelectorAll('.work-choose').forEach(btn => btn.classList.remove('active-filter'));
+        graphicBtn.classList.add('active-filter');
+    });
+}
+
+// Show Web Development content by default when page loads
+showCategory('web');
+webDevBtn?.classList.add('active-filter');
 
     // --- Mobile Navigation (Hamburger Menu) (Existing Code) ---
     const hamburgerMenu = document.getElementById('hamburger');
